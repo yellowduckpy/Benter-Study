@@ -1,11 +1,108 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benter study | Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benter|Home</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle, #21384e, #140837);
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .stars {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1; /* Para manter as estrelas atrás do conteúdo */
+    }
+
+    .stars div {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      animation: blink 2s infinite ease-in-out;
+      animation-delay: calc(-1s * var(--delay));
+      opacity: 0.5;
+    }
+
+    @keyframes blink {
+      0%, 100% {
+        opacity: 0.5;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+
+  </style>
+
 </head>
 <body>
-    
+  <div class="stars">
+    <script>
+      const starContainer = document.querySelector('.stars');
+      const starCount = 200;
+
+      for (let i = 0; i < starCount; i++) {
+        const star = document.createElement('div');
+        const x = Math.random() * 100; // Percentagem horizontal
+        const y = Math.random() * 100; // Percentagem vertical
+        const delay = Math.random() * 2; // Atraso aleatório para piscada
+
+        star.style.left = `${x}%`;
+        star.style.top = `${y}%`;
+        star.style.setProperty('--delay', delay);
+
+        starContainer.appendChild(star);
+      }
+    </script>
+  </div>
+
+  <!-- Conteúdo do site -->
+  <div class="content">
+    <div id="home-nav">
+        <nav>
+            <a href="#body">Home</a>
+            <a href="#foco">Foco|Timers</a>
+            <a href="#Games">Games|1x1</a>
+            <a href="Pontos.html">Pontos</a>
+            <a href="">Discord</a>
+            <a href="faq.html">Tutorial</a>
+        </nav>
+    </div>
+
+    <div>
+        <nav>
+            <abbr title="Temporizador"><a href="">Timer</a>
+            <a href="">Pomodoro</a>
+            <a href="">Cards</a></abbr>
+            <abbr title="Lista de Tarefas"><a href="">To-do</a>
+            <a href="">Anotações</a>
+            <a href="">Rank</a>
+            <a href="">torneio</a>
+            <a href="">Música</a>
+            <a href="">Loja</a>
+        </nav>
+    </div>
+    <section class="options">
+        <ul>
+            <li></li>
+        </ul>
+    </section>
+    <section class="atalhos">
+        <ul>
+            
+        </ul>
+    </section>
+  </div>
 </body>
 </html>
