@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Pixelify+Sans:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 :root {
@@ -16,7 +17,8 @@
 /*NAV BAR PRINCIPAL*/
 #home-nav{
   padding: 0px;
-  background-color: #0D1821;
+  background-image: radial-gradient( circle,  #0D1821,#0D1821,#2e526f7e,#2e526f7e);
+
   top: 0px;
   margin: -7px;
   padding: 10px;
@@ -25,7 +27,7 @@
 
 #home-nav > nav {
   margin-top: 20px;
-  margin-left: 500px;
+  margin-left: 520px;
 }
 
 #home-nav > nav > a{
@@ -43,14 +45,14 @@
   text-decoration: underline;
   padding: 5px; 
   border-top: 15px;
-  font-size: 19px;
+
 
 }
 
 .profile-section{
   margin-left: auto;
   display: flex;
-  background-color: #71157b;
+  background-color: #4e0956;
   color:#ffffff;
   padding: 5px;
   border-radius: 10px;
@@ -63,16 +65,126 @@
 /*Navbar de opções*/
 
 .nav-options{
-  background-color: #4a9bc7;
+  background-image: linear-gradient(to right bottom, #0a1922, #3080c1);
   margin: auto;
   padding: 8px;
   border-radius: 20px;
-  width: 621px;
+  text-align: center;
+  width: 590px;
   height: 30px;
+  box-shadow: 5px 5px 5px #3898cb6d;
 }
 
 .nav-options > nav > a , .nav-options > nav >abbr > a{
-  color: #ffffff;
+  color: #ceeaff;
+
+  border-radius: 10px;
   text-decoration: none;
+  text-shadow:  10px 10px 10px #6758db;
+  padding: 6px;
+  top: -95px;
+}
+/*Menu*/
+.options{
+  width: 500px;
+  margin-left: 90px;
+
+}
+
+.saudacao{
+  font-size: 27px;
+  text-align: center;
+  text-shadow: 3px 2px  #38a0d874;
+}
+
+.options-content{
+  background-image: linear-gradient(to bottom right, rgb(34, 46, 153), rgb(92, 84, 174));
+  box-shadow: 2px 7px 7px  #1d6890;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.options-content >ul{
+  list-style-type: circle;
+}
+
+.options-content >ul > li > a{
+  text-decoration: none;
+  color: white;
+}
+
+/*Atalhos:*/
+
+.atalhos{
+margin-left: 250px;
+
+}
+
+#atopt{
+  background-image: linear-gradient(to bottom right,#1c2458,#1b2984);
+  color: yellow;
+  font-size: 40px;
+  font-family: "Pixelify Sans", serif;
+  box-shadow: 7px 7px 4px #ffff00cc;
+  margin: 15px;
   padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  width: 350px;
+  height: 65px;
+}
+
+
+/* From Uiverse.io by MikeAndrewDesigner */ 
+/* From Uiverse.io by mobinkakei */ 
+#atopt{
+
+  /* control ize */
+  --u: 5px;
+  --c1: #0c0c77a3;
+  --c2: #000000a3;
+  --c3: #08042485;
+  --gp: 50% / calc(var(--u) * 16.9) calc(var(--u) * 12.8);
+  background: conic-gradient(
+        from 122deg at 50% 85.15%,
+        var(--c2) 0 58deg,
+        var(--c3) 0 116deg,
+        #fff0 0 100%
+      )
+      var(--gp),
+    conic-gradient(from 122deg at 50% 72.5%, var(--c1) 0 116deg, #fff0 0 100%)
+      var(--gp),
+    conic-gradient(from 58deg at 82.85% 50%, var(--c3) 0 64deg, #fff0 0 100%)
+      var(--gp),
+    conic-gradient(
+        from 58deg at 66.87% 50%,
+        var(--c1) 0 64deg,
+        var(--c2) 0 130deg,
+        #fff0 0 100%
+      )
+      var(--gp),
+    conic-gradient(from 238deg at 17.15% 50%, var(--c2) 0 64deg, #fff0 0 100%)
+      var(--gp),
+    conic-gradient(
+        from 172deg at 33.13% 50%,
+        var(--c3) 0 66deg,
+        var(--c1) 0 130deg,
+        #fff0 0 100%
+      )
+      var(--gp),
+    linear-gradient(98deg, var(--c3) 0 15%, #fff0 calc(15% + 1px) 100%)
+      var(--gp),
+    linear-gradient(-98deg, var(--c2) 0 15%, #fff0 calc(15% + 1px) 100%)
+      var(--gp),
+    conic-gradient(
+        from -58deg at 50.25% 14.85%,
+        var(--c3) 0 58deg,
+        var(--c2) 0 116deg,
+        #fff0 0 100%
+      )
+      var(--gp),
+    conic-gradient(from -58deg at 50% 28.125%, var(--c1) 0 116deg, #fff0 0 100%)
+      var(--gp),
+    linear-gradient(90deg, var(--c2) 0 50%, var(--c3) 0 100%) var(--gp);
 }
