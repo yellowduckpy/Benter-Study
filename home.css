@@ -1,7 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 :root {
-  --branco:#F2F4CB;
-  --azulzão:#0D1821;
-  --azul:#1481BA;
-  --rosa:#A188A6;
-  --azulclaro:#7F5A83;
+  --branco: #F2F4CB;
+  --azulzão: #0D1821;
+  --azul: #1481BA;
+  --rosa: #A188A6;
+  --azulclaro: #7F5A83;
+}
+
+*{
+  font-family: "Poppins", serif;
+}
+
+/*NAV BAR PRINCIPAL*/
+#home-nav{
+  padding: 0px;
+  background-color: #0D1821;
+  top: 0px;
+  margin: -7px;
+  padding: 10px;
+  display: flex;
+}
+
+#home-nav > nav {
+  margin-top: 20px;
+  margin-left: 500px;
+}
+
+#home-nav > nav > a{
+  color: #F2F4CB;
+  transition: 1s;
+  text-decoration: none;
+  padding: 5px; 
+  border-top: 15px;
+  font-size: 18px;
+}
+
+#home-nav > nav > a:hover{
+  color: #b2b9dc;
+  transition: 1s;
+  text-decoration: underline;
+  padding: 5px; 
+  border-top: 15px;
+  font-size: 19px;
+
+}
+
+.profile-section{
+  margin-left: auto;
+  display: flex;
+  background-color: #71157b;
+  color:#ffffff;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#nickinfo{
+  padding: 3px;
+}
+
+/*Navbar de opções*/
+
+.nav-options{
+  background-color: #4a9bc7;
+  margin: auto;
+  padding: 8px;
+  border-radius: 20px;
+  width: 621px;
+  height: 30px;
+}
+
+.nav-options > nav > a , .nav-options > nav >abbr > a{
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px;
 }

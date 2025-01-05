@@ -1,49 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Benter|Home</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: radial-gradient(circle, #21384e, #140837);
-      height: 100vh;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .stars {
-      width: 100%;
-      height: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: -1; /* Para manter as estrelas atrás do conteúdo */
-    }
-
-    .stars div {
-      position: absolute;
-      width: 2px;
-      height: 2px;
-      background: white;
-      border-radius: 50%;
-      animation: blink 2s infinite ease-in-out;
-      animation-delay: calc(-1s * var(--delay));
-      opacity: 0.5;
-    }
-
-    @keyframes blink {
-      0%, 100% {
-        opacity: 0.5;
-      }
-      50% {
-        opacity: 1;
-      }
-    }
-
-  </style>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="background.css">
+ 
 
 </head>
 <body>
@@ -69,23 +32,36 @@
 
   <!-- Conteúdo do site -->
   <div class="content">
+    
     <div id="home-nav">
         <nav>
             <a href="#body">Home</a>
-            <a href="#foco">Foco|Timers</a>
-            <a href="#Games">Games|1x1</a>
+            <a href="#foco">Timers</a>
+            <a href="#Games">Games</a>
             <a href="Pontos.html">Pontos</a>
             <a href="">Discord</a>
             <a href="faq.html">Tutorial</a>
+              
         </nav>
+        <div class="profile-section">
+         
+            <img id="Profile Picture" style="width: 60px; border-radius: 50%;" src="LaeLx7.jpg" alt="">
+            <div id="nickinfo">
+            <div id="Nickname">Leal</div>
+            <div id="level">1230xp</div>
+          </div>
+          <div id="rank"><img style="width: 45px; " src="mestre do frifrai.png" alt="">
+            <br>
+            <div id="rank-name"></div></div>
+        </div>
     </div>
-
-    <div>
+      <br>
+    <div class="nav-options">
         <nav>
-            <abbr title="Temporizador"><a href="">Timer</a>
+            <abbr title="Temporizador"><a href="">Timer</a></abbr>
             <a href="">Pomodoro</a>
-            <a href="">Cards</a></abbr>
-            <abbr title="Lista de Tarefas"><a href="">To-do</a>
+            <a href="">Cards</a>
+            <abbr title="Lista de Tarefas"><a href="">To-do</a></abbr>
             <a href="">Anotações</a>
             <a href="">Rank</a>
             <a href="">torneio</a>
@@ -94,15 +70,60 @@
         </nav>
     </div>
     <section class="options">
+      <div class="saudacao">
+        <h1>Bom Dia! Davi</h1>
+      </div>
         <ul>
-            <li></li>
+            <li>Como Estudar</li>
+              <li>Estude com o benter</li>
+                <li>Benter Store</li>
+                <li>Artigo (variados)</li>
+              <li>Benter Recomenda</li>
+            <li>Comunidade Discord</li>
         </ul>
     </section>
     <section class="atalhos">
-        <ul>
-            
-        </ul>
+      <div id="ataopts">
+        
+          <div id="atopt"><img src="python.png" alt="">Timer</div>
+            <div id="atopt"><img src="python.png" alt="">Pomodoro</div>
+              <div id="atopt"><img src="python.png" alt="">Quiz Solo</div>
+                <div id="atopt"><img src="python.png" alt="">Music</div>
+                <div id="atopt"><img src="python.png" alt="">Benter Store</div>
+              <div id="atopt"><img src="python.png" alt="">Cards</div>
+            <div id="atopt"><img src="python.png" alt="">Benter Champ</div>
+          <div id="atopt"><img src="python.png" alt="">Study With Me</div>
+          
+      </div>
     </section>
+    <main class="rank-section">
+      <h1>Rank De Pontos</h1>
+      <ol>
+        <li>Lealx7 <div id="pontos">1200pts</div></li>
+        <li>Samuel Barros <div id="pontos">1200pts</div></li>
+        <li>Ana Maria <div id="pontos">1200pts</div></li>
+        <li>Kanye West <div id="pontos">1200pts</div></li>
+        <li>Tyler the creator <div id="pontos">1200pts</div></li>
+        <li>Rex orange county <div id="pontos">1200pts</div></li>
+        <li>Misty <div id="pontos">1200pts</div></li>
+        <li>Manoel Gomes <div id="pontos">1200pts</div></li>
+        <li>Phareel william <div id="pontos">1200pts</div></li>
+        <li>Ronaldo nazário <div id="pontos">1200pts</div></li>
+        <hr>
+        <li>Lealx7 <div id="pontos">1200pts</div></li>
+        <li>Samuel Barros <div id="pontos">1200pts</div></li>
+        <li>Ana Maria <div id="pontos">1200pts</div></li>
+        <li>Kanye West <div id="pontos">1200pts</div></li>
+        <li>Tyler the creator <div id="pontos">1200pts</div></li>
+        <li>Rex orange county <div id="pontos">1200pts</div></li>
+        <li>Misty <div id="pontos">1200pts</div></li>
+        <li>Manoel Gomes <div id="pontos">1200pts</div></li>
+        <li>Phareel william <div id="pontos">1200pts</div></li>
+        <li>Ronaldo nazário <div id="pontos">1200pts</div></li>
+
+
+      </ol>
+    </main>
   </div>
 </body>
 </html>
