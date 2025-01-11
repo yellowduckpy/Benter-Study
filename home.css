@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Pixelify+Sans:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+
+
 :root {
   --branco: #F2F4CB;
   --azulzão: #0D1821;
@@ -17,7 +23,7 @@
 /*NAV BAR PRINCIPAL*/
 #home-nav{
   padding: 0px;
-  background-image: radial-gradient( circle,  #0D1821,#0D1821,#2e526f7e,#2e526f7e);
+  background-image: radial-gradient( circle,  #0D1821,#0d1821ac,#13548998,#1354898c);
 
   top: 0px;
   margin: -7px;
@@ -52,14 +58,16 @@
 .profile-section{
   margin-left: auto;
   display: flex;
-  background-color: #4e0956;
+  background-image: linear-gradient(to bottom right,rgb(10, 10, 90),rgb(78, 78, 163));
   color:#ffffff;
-  padding: 5px;
+  text-shadow: 2px 2px 2px #088bd2;
+  padding: 10px;
   border-radius: 10px;
 }
 
 #nickinfo{
-  padding: 3px;
+  padding: 5px;
+  margin-right: 120px;
 }
 
 /*Navbar de opções*/
@@ -98,7 +106,7 @@
 }
 
 .options-content{
-  background-image: linear-gradient(to bottom right, rgb(34, 46, 153), rgb(92, 84, 174));
+  background-image: linear-gradient(to bottom right, rgb(19, 28, 100), rgb(57, 51, 133));
   box-shadow: 2px 7px 7px  #1d6890;
   padding: 10px;
   border-radius: 10px;
@@ -142,9 +150,9 @@ margin-left: 250px;
 
   /* control ize */
   --u: 5px;
-  --c1: #0c0c77a3;
-  --c2: #000000a3;
-  --c3: #08042485;
+  --c1: #06064d;
+  --c2: #16095d;
+  --c3: #0e064385;
   --gp: 50% / calc(var(--u) * 16.9) calc(var(--u) * 12.8);
   background: conic-gradient(
         from 122deg at 50% 85.15%,
@@ -188,3 +196,53 @@ margin-left: 250px;
       var(--gp),
     linear-gradient(90deg, var(--c2) 0 50%, var(--c3) 0 100%) var(--gp);
 }
+
+
+.rank-section {
+  color: white;
+  background-image: linear-gradient(to bottom right, rgb(9, 9, 85), rgb(37, 37, 109));
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.rank-section > h1{
+  text-align: center;
+  font-family: "Pixelify Sans", serif;
+  font-size: 40px;
+  color: #d7ff0e;
+}
+
+#rank-info{
+  columns: 2;
+  
+}
+
+
+
+
+
+.lista-nomes{
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  
+
+}
+.lista-nomes > li{
+ 
+  color: rgb(191, 255, 0);
+}
+
+#numberone{
+  color: yellow;
+  font-size: 30px;
+  font-family: "Jersey 10", serif;
+}
+
+.lista-pontos{
+  display: flex;
+  flex-direction: column;
+
+}
+
