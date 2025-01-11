@@ -1,34 +1,70 @@
 body {
-    background: radial-gradient(circle, #22678c, #135489);
-    height: 100vh;
-    position: relative;
-  }
+  background: radial-gradient(circle, #001a33, #000000);
+  position: relative;
+  height: 100vh;
+}
 
-  .stars {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1; /* Para manter as estrelas atrás do conteúdo */
-  }
+.background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
-  .stars div {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background: white;
-    border-radius: 50%;
-    animation: blink 2s infinite ease-in-out;
-    animation-delay: calc(-1s * var(--delay));
-    opacity: 0.5;
-  }
+.stars div, .meteors div, .planets div, .rockets div {
+  position: absolute;
+}
 
-  @keyframes blink {
-    0%, 100% {
-      opacity: 0.5;
-    }
-    50% {
-      opacity: 1;
-    }
+/* Estrelas */
+.stars div {
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: blink 2s infinite ease-in-out;
+  animation-delay: calc(-1s * var(--delay));
+  opacity: 0.7;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+/* Meteoros */
+.meteors div {
+  width: 6px;
+  height: 6px;
+  background: linear-gradient(45deg, white, rgba(74, 74, 206, 0.464));
+  border-radius: 50%;
+  animation: meteor 60s linear infinite;
+}
+
+@keyframes meteor {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
   }
+  100% {
+    transform: translate(500px, 500px) scale(0.5);
+    opacity: 0;
+  }
+}
+
+/* Planetas */
+.planets div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #0059ff, #cc6600);
+  box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  animation: planetMove 20s linear infinite;
+}
+
+@keyframes planetMove {
+  0% { transform: translate(-50px, -50px); }
+  100% { transform: translate(110vw, 110vh); }
+}

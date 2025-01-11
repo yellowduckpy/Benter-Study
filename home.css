@@ -23,8 +23,7 @@
 /*NAV BAR PRINCIPAL*/
 #home-nav{
   padding: 0px;
-  background-image: radial-gradient( circle,  #0D1821,#0d1821ac,#13548998,#1354898c);
-
+  background: radial-gradient(circle, #0e3f6c, #000000);
   top: 0px;
   margin: -7px;
   padding: 10px;
@@ -45,7 +44,7 @@
   font-size: 18px;
 }
 
-#home-nav > nav > a:hover{
+ a:hover{
   color: #b2b9dc;
   transition: 1s;
   text-decoration: underline;
@@ -150,9 +149,9 @@ margin-left: 250px;
 
   /* control ize */
   --u: 5px;
-  --c1: #06064d;
-  --c2: #16095d;
-  --c3: #0e064385;
+  --c1: #10103b;
+  --c2: #170e49;
+  --c3: #24196e;
   --gp: 50% / calc(var(--u) * 16.9) calc(var(--u) * 12.8);
   background: conic-gradient(
         from 122deg at 50% 85.15%,
@@ -215,22 +214,15 @@ margin-left: 250px;
 
 #rank-info{
   columns: 2;
-  
 }
-
-
-
-
 
 .lista-nomes{
   font-size: medium;
   display: flex;
   flex-direction: column;
-  
-
 }
-.lista-nomes > li{
- 
+
+.lista-nomes > li{ 
   color: rgb(191, 255, 0);
 }
 
@@ -243,6 +235,9 @@ margin-left: 250px;
 .lista-pontos{
   display: flex;
   flex-direction: column;
-
 }
 
+#counter-section{
+  background-color: #088bd2;
+  
+}

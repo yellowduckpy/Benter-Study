@@ -11,24 +11,72 @@
           
 </head>
 <body>
-  <div class="stars">
+
+  <div class="background">
+    <div class="stars"></div>
+    <div class="meteors"></div>
+    <div class="planets"></div>
+    <div class="rockets"></div>
     <script>
       const starContainer = document.querySelector('.stars');
+      const meteorContainer = document.querySelector('.meteors');
+      const planetContainer = document.querySelector('.planets');
+      const rocketContainer = document.querySelector('.rockets');
+  
       const starCount = 200;
-
+      const meteorCount = 20;
+      const planetCount = 3;
+;
+  
+      // Criar estrelas
       for (let i = 0; i < starCount; i++) {
         const star = document.createElement('div');
         const x = Math.random() * 100; // Percentagem horizontal
         const y = Math.random() * 100; // Percentagem vertical
         const delay = Math.random() * 2; // Atraso aleatório para piscada
-
+  
         star.style.left = `${x}%`;
         star.style.top = `${y}%`;
         star.style.setProperty('--delay', delay);
-
+  
         starContainer.appendChild(star);
       }
-    </script>
+  
+      // Criar meteoros
+      for (let i = 0; i < meteorCount; i++) {
+        const meteor = document.createElement('div');
+        const x = Math.random() * 100; // Percentagem horizontal
+        const y = Math.random() * 100; // Percentagem vertical
+  
+        meteor.style.left = `${x}%`;
+        meteor.style.top = `${y}%`;
+  
+        meteorContainer.appendChild(meteor);
+      }
+  
+      // Criar planetas
+      for (let i = 0; i < planetCount; i++) {
+        const planet = document.createElement('div');
+        const x = Math.random() * 100; // Percentagem horizontal
+        const y = Math.random() * 100; // Percentagem vertical
+  
+        planet.style.left = `${x}%`;
+        planet.style.top = `${y}%`;
+  
+        planetContainer.appendChild(planet);
+      }  
+      // Criar foguetes
+      for (let i = 0; i < rocketCount; i++) {
+        const rocket = document.createElement('div');
+        rocket.classList.add('rocket');
+  
+        const fire = document.createElement('div');
+        fire.classList.add('fire');
+  
+        rocket.appendChild(fire);
+        rocketContainer.appendChild(rocket);
+      }
+      </script>
   </div>
 
   <!-- Conteúdo do site -->
@@ -36,31 +84,32 @@
     
     <div id="home-nav">
         <nav>
-            <a href="#body">Home</a>
+            <a href="#body">Home</a> 
             <a href="#foco">Timers</a>
-            <a href="#Games">Games</a>
-            <a href="Pontos.html">Pontos</a>
-            <a href="">Discord</a>
+            <a href="#Games">Benter Store</a>
+            <a href="Pontos.html">Quiz</a>
+            <a href="">Configurações</a>
             <a href="faq.html">Tutorial</a>
-              
         </nav>
+
+        <!--Seção de perfil-->
         <div class="profile-section">
-         
-            <img id="Profile Picture" style="width: 60px; border-radius: 50%;" src="LaeLx7.jpg" alt="">
-            <div id="nickinfo">
-            <div id="Nickname">Leal</div>
-            <div id="level">1230xp</div>
-          </div>
-          <div id="rank"><img style="width: 45px; " src="mestre do frifrai.png" alt="">
-            <br>
-            <div id="rank-name"></div></div>
+          <img id="Profile Picture" style="width: 60px; border-radius: 50%;" src="LaeLx7.jpg" alt="">
+              <div id="nickinfo">
+                <div id="Nickname">Leal</div> <!--Nome-->
+                <div id="level">1230xp</div>  <!--Nível-->
+              </div>
+
+              <div id="rank">
+                <img style="width: 45px; " src="mestre do frifrai.png" alt="">
+              </div>
         </div>
     </div>
       
     <div class="nav-options">
+
         <nav>
-            
-            
+              
             <abbr title="Lista de Tarefas"><a href="">lista</a></abbr>
             <a href="">Rank</a>
             <a href="">Loja</a>
@@ -72,6 +121,7 @@
             <a href="">Pomodoro</a>
             
         </nav>
+
     </div>
 
     <br>
@@ -85,7 +135,7 @@
             <ul>
               <li><a href="">Benter Store</a></li>
                 <li><a href="">Como Estudar</a></li>
-                    <li><a href="">Artigo (variados)</a></li>
+                    <li><a href="">Artigos (variados)</a></li>
                     <li><a href="">Benter Recomenda</a></li>
                     <li><a href="">Estude com o benter</a></li>
                 <li><a href="">Comunidade Discord</a></li>
@@ -151,13 +201,14 @@
       
       <div id="Pomodoro">
         <section>
-
+          <div id="pomodoro-min">25</div>:<div id="pomodoro-sec">00</div>
+          <button>Começar</button>
         </section>
       </div>
 
       <div id="Timer">
         <section>
-
+          <div id="timer-min">00</div>:<div id="timer-sec">00</div>
         </section>
       </div>
 
