@@ -238,6 +238,51 @@ margin-left: 250px;
 }
 
 #counter-section{
-  background-color: #088bd2;
-  
+  background-image: linear-gradient(to right,rgb(234, 30, 30),rgb(234, 30, 30),rgba(251, 171, 12, 0.751),rgb(168, 230, 11),rgb(192, 255, 4));
+  width: 1200px;
+  height: 300px;
+  margin: auto;
+  columns: 2;
+  padding: 25px;
+  border: 5px;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 10px 2px 90px rgb(255, 0, 0);
+
+}
+p{
+  font-size:15px;
+}
+
+#pomodoro{
+  /*background-image: linear-gradient(to bottom right, rgb(230, 48, 48), rgba(144, 25, 25, 0.315));*/
+  color: white;
+  padding: 50px;
+  text-align: center;
+  font-size: 65px;
+  width: 500px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+#timer{
+  /*background-imaage: linear-gradient(to bottom right,yellow,rgba(228, 228, 3, 0.355));*/
+  color: #001a5b;
+  padding: 50px;
+  text-align: center;
+  font-size: 65px;
+  width: 500px;
+  height: 200px;
+  border-radius: 10px;
+}
+ button{
+  border-radius: 50%;
+  background-color: #088bd200;
+  border-style: none;
+ }
+
+button > img{
+  width: 20px;
+  padding: 5px;
+  filter: invert(1);
+
 }
