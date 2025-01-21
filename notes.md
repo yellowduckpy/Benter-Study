@@ -21,3 +21,17 @@ sistema do site:
 - (quiz 60% correto = 10 pontos) (quiz 70% correto = 13 pontos) (quiz 80% correto = 15 pontos) (quiz 90% correto = 17 pontos) (quiz 100% correto = 20 pontos)
 - competição
 - rank de 20 posições
+
+ <div class="logo">
+      <h1>Benter <span>Study Center</span></h1>
+    </div>
+
+      header .logo h1 {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  header .logo span {
+    color: #ffc107;
+  }
+  

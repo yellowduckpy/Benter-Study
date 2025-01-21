@@ -1,231 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Benter|Home</title>
-  <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="background.css">
-  
-  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benter School</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="welcome.css">
 </head>
 <body>
 
-  <div class="background">
-    <div class="stars"></div>
-    <div class="meteors"></div>
-    <div class="planets"></div>
-    <div class="rockets"></div>
-    <script>
-      const starContainer = document.querySelector('.stars');
-      const meteorContainer = document.querySelector('.meteors');
-      const planetContainer = document.querySelector('.planets');
-      const rocketContainer = document.querySelector('.rockets');
-  
-      const starCount = 200;
-      const meteorCount = 20;
-      const planetCount = 3;
-;
-  
-      // Criar estrelas
-      for (let i = 0; i < starCount; i++) {
-        const star = document.createElement('div');
-        const x = Math.random() * 100; // Percentagem horizontal
-        const y = Math.random() * 100; // Percentagem vertical
-        const delay = Math.random() * 2; // Atraso aleatório para piscada
-  
-        star.style.left = `${x}%`;
-        star.style.top = `${y}%`;
-        star.style.setProperty('--delay', delay);
-  
-        starContainer.appendChild(star);
-      }
-  
-      // Criar meteoros
-      for (let i = 0; i < meteorCount; i++) {
-        const meteor = document.createElement('div');
-        const x = Math.random() * 100; // Percentagem horizontal
-        const y = Math.random() * 100; // Percentagem vertical
-  
-        meteor.style.left = `${x}%`;
-        meteor.style.top = `${y}%`;
-  
-        meteorContainer.appendChild(meteor);
-      }
-  
-      // Criar planetas
-      for (let i = 0; i < planetCount; i++) {
-        const planet = document.createElement('div');
-        const x = Math.random() * 100; // Percentagem horizontal
-        const y = Math.random() * 100; // Percentagem vertical
-  
-        planet.style.left = `${x}%`;
-        planet.style.top = `${y}%`;
-  
-        planetContainer.appendChild(planet);
-      }  
-      // Criar foguetes
-      for (let i = 0; i < rocketCount; i++) {
-        const rocket = document.createElement('div');
-        rocket.classList.add('rocket');
-  
-        const fire = document.createElement('div');
-        fire.classList.add('fire');
-  
-        rocket.appendChild(fire);
-        rocketContainer.appendChild(rocket);
-      }
-      </script>
-  </div>
-
-  <!-- Conteúdo do site -->
-  <div class="content">
-    
-    <div id="home-nav">
+    <header>
         <nav>
-            <a onclick="aviso()" href="#body">Home</a> 
-            <a onclick="aviso()" href="#foco">Timers</a>
-            <a onclick="aviso()" href="Pontos.html">Quiz</a>
-            <a onclick="aviso()" href="#">Configurações</a>
-            <a onclick="aviso()" href="#">Tutorial</a>
-        </nav>
-
-        <script>
-          function aviso(){
-            alert("Esta Página ainda está sendo feita")
-          }
-          function aviso_btn(){
-            alert("Isso Ainda está sendo configurado Volte quando O site estiver pronto")
-          }
-        </script>
-
-        <!--Seção de perfil-->
-        <div class="profile-section">
-          <img id="Profile Picture" style="width: 60px; border-radius: 50%;" src="LaeLx7.jpg" alt="">
-              <div id="nickinfo">
-                <div id="Nickname">Username123</div> <!--Nome-->
-                <div id="level">1230xp</div>  <!--Nível-->
-              </div>
-
-              <div id="rank">
-                <img style="width: 45px; " src="mestre do frifrai.png" alt="">
-              </div>
-        </div>
-    </div>
-      
-    <div class="nav-options">
-
-        <nav>
-              
-            <abbr title="Lista de Tarefas"><a href="">lista</a></abbr>
-            <a onclick="aviso()" href="">Rank</a>
-            <a onclick="aviso()" href="">Loja</a>
-            <abbr title="Temporizador"><a onclick="aviso()" href="">Timer</a></abbr>
-            <a onclick="aviso()" href="">Cards</a>
-            <a onclick="aviso()" href="">notes</a>
-            <a onclick="aviso()" href="">torneio</a>
-            <a onclick="aviso()" href="">Música</a>
-            <a onclick="aviso()" href="">Pomodoro</a>
-            
-        </nav>
-
-    </div>
-
-    <br>
-    <ul style="list-style: none; columns: 2; display: flex;">
-      
-      <li><section class="options" >
-        <div class="options-content">
-          <div class="saudacao">
-            <h1>Bom Dia <span style="color: aqua;">Jogador!</span></h1>
-          </div>
-            <ul>
-              <li><a href="">Lorem ipsum dolor sit amet.</a></li>
-                <li><a href="">Lorem ipsum dolor sit amet.</a></li>
-                    <li><a href="">Lorem ipsum dolor sit amet.</a></li>
-                    <li><a href="">Lorem ipsum dolor sit amet.</a></li>
-                    <li><a href="">Lorem ipsum dolor sit amet.</a></li>
-                <li><a href="">Lorem ipsum dolor sit amet.</a></li>
+            <div class="logo">Benter <span>School</span></div>
+            <ul class="nav-links">
+                <li><a href="#">Entrar Na Conta</a></li>
+                <li><a href="#">Criar Conta</a></li>
+                <li><a href="#">O que é o Benter?</a></li>
+                <li><a href="#"></a></li>
             </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bem-vindo ao Benter School!</h1>
+            <p>Aprenda de forma divertida, eficiente e com um toque único.</p>
+            <a href="#" class="btn">Comece Agora</a>
         </div>
-
-        <section class="rank-section" >
-          <h1>Rank De Pontos</h1>
-          <div id="rank-info">
-            <ol class="lista-nomes" style="columns: 1
-            ;">
-              <li id="numberone">Jogador 1</li>
-             
-              <li>Jogador 2</li>
-              <li>Jogador 3</li>
-              <li>Jogador 4</li>
-              <li>Jogador 5</li>
-              <li>Jogador 6</li>
-              <li>Jogador 7</li>
-              <li>Jogador 8</li>
-              <li>Jogador 9</li>
-              <li>Jogador 10</li>
-            
-            </ol>
-            <ul class="lista-pontos" style="list-style-type: none;">
-              <li>2103 Pontos</li>
-              <li>2103 Pontos</li>
-              <li>2103 Pontos</li>
-              <li>2103 Pontos</li>
-              <li>2103 Pontos</li>
-              <li>2103 Pontos</li>
-              <li>2103 Pontos</li>
-              <li>2103 Pontos</li>
-              <li>2103 Pontos</li>
-              <li>2103 Pontos</li>
-            </ul>
-          </div>
-          
-        </section>
-      
-      </section></li>
- 
-      <li>
-        <section class="atalhos">
-          <div id="ataopts">
-        
-              <div id="atopt"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="">Botão 1</div>
-                <div id="atopt"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="">Botão 2</div>
-                  <div id="atopt"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="">Botão 3</div>
-                    <div id="atopt"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="">Botão 4</div>
-                    <div id="atopt"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="">Botão 5</div>
-                  <div id="atopt"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="">Botão 6</div>
-                  <div id="atopt"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="">Botão 7</div>
-              <div id="atopt"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="">Botão 8</div>
-  
-           
-        
-          </div>
-        </section>
-      </li>
-    </ul>
-
-    <section id="counter-section">
-      
-      <div id="pomodoro">    
-        <p>pomodoro</p>  
-          <div id="pomodoro-counter">25:00</div>
-          <button onclick="aviso_btn()"><img src="icons Benter/play.png" alt=""></button> 
-           <button onclick="aviso_btn()"><img src="icons Benter/pause.png" alt=""></button> <button><img src="icons Benter/refresh.png" alt=""></button>
-      </div>
-
-      <div id="timer"> 
-        <p>timer</p>   
-          <div id="timer-counter">00:00</div>
-          <button onclick="aviso_btn()"><img src="icons Benter/play.png" alt=""></button> <button onclick="aviso_btn()"><img src="icons Benter/pause.png" alt=""></button> <button onclick="aviso_btn()"><img src="icons Benter/refresh.png" alt=""></button>
-      </div>
-
     </section>
-    <br>
 
+    <section class="features">
+        <h2>Funcionalidades</h2>
+        <div class="feature">
+            <h3>Quiz Interativo</h3>
+            <p>Teste seus conhecimentos com quizzes divertidos e educativos. e dispute com estudantes da sua área</p>
+        </div>
+        <div class="feature">
+            <h3>Pomodoro e Timer</h3>
+            <p>Aumente sua produtividade com timers personalizáveis.</p>
+        </div>
+        <div class="feature">
+            <h3>Flashcards</h3>
+            <p>Melhore sua memória com flashcards</p>
+        </div>
+    </section>
 
- 
-  </div>
+    <footer>
+        <p>&copy; 2025 Benter School. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
