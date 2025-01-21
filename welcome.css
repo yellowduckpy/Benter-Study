@@ -1,0 +1,146 @@
+/* Reset básico de estilo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #6c63ff;
+  padding: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+  font-size: 24px;
+  color: #fff;
+}
+
+header .logo span {
+  color: #ffc107;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav .logo {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: white;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin-left: 20px;
+}
+
+nav .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+  color: #ffd700;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://source.unsplash.com/1600x900/?study,education') no-repeat center center/cover;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+  background-color: #333;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.hero-content p {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.hero .btn {
+  padding: 10px 30px;
+  background-color: #ffd700;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #ffcc00;
+}
+
+/* Features Section */
+.features {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.features h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #6c63ff;
+}
+
+.feature {
+  display: inline-block;
+  width: 30%;
+  height: 250px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #dcdced;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background-color: #6c63ff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1em;
+}
+
